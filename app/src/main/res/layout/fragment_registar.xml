@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistarFragment">
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+        <TextView
+            android:id="@+id/textTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Base de Datos SQLite"
+            android:textAllCaps="true"
+            android:textColor="#0c1476"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textTitulo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Informacion de Asignaturas"
+            android:textAllCaps="true"
+            android:textColor="#0c1476"
+            android:textSize="7pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textTitulo" />
+        <EditText
+            android:id="@+id/codigoAsignatura"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:hint="Código de la Asignatura"
+            android:inputType="number"
+            android:textColorHint="@color/hintColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTitulo2" />
+
+        <TextView
+            android:id="@+id/textCodigo"
+            android:layout_width="69dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="28dp"
+            android:text="Código:"
+            android:textColor="#0C4176"
+            android:textSize="8pt"
+            app:layout_constraintEnd_toStartOf="@+id/codigoAsignatura"
+            app:layout_constraintHorizontal_bias="0.662"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTitulo2" />
+
+        <EditText
+            android:id="@+id/numeroCreditos"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:hint="Número de Créditos"
+            android:inputType="number"
+            android:textColorHint="@color/hintColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nombreAsignatura"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/semestre"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:hint="Semestre Académico"
+            android:inputType="number"
+            android:textColorHint="@color/hintColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numeroCreditos" />
+
+        <TextView
+            android:id="@+id/textCreditos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Créditos:"
+            android:textColor="#0C4176"
+            android:textSize="8pt"
+            app:layout_constraintEnd_toStartOf="@+id/numeroCreditos"
+            app:layout_constraintHorizontal_bias="0.706"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nombreAsignatura" />
+
+        <EditText
+            android:id="@+id/nombreAsignatura"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:hint="Nombre Asignatura"
+            android:inputType="text"
+            android:textColorHint="@color/hintColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/codigoAsignatura" />
+        <TextView
+            android:id="@+id/textNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Nombre:"
+            android:textColor="#0C4176"
+            android:textSize="8pt"
+            app:layout_constraintEnd_toStartOf="@+id/nombreAsignatura"
+            app:layout_constraintHorizontal_bias="0.679"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/codigoAsignatura" />
+
+      <TextView
+          android:id="@+id/texSemestre"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="28dp"
+          android:text="Semestre:"
+          android:textColor="#0C4176"
+          android:textSize="8pt"
+          app:layout_constraintEnd_toStartOf="@+id/semestre"
+          app:layout_constraintHorizontal_bias="0.815"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/numeroCreditos" />
+
+        <Button
+            android:id="@+id/botonGuardar"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:background="#982D5CD3"
+            android:drawableLeft="@drawable/ic_guardar"
+            android:text="Registrar Asignatura"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.584"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/semestre" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
